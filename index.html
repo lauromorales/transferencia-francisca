@@ -2,20 +2,20 @@
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#1f0d16">
+<meta name="theme-color" content="#ffffff">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
 <title>Decoes Joyería · Pagos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: estuche de joyería. Fondo de terciopelo vino, filetes y acentos dorado champaña, una sola columna para el celular. Tema único (oscuro) a propósito. */
+/* Layout: estuche de joyería. Blanco perla con filetes y acentos dorados, una sola columna para el celular. Tema único (claro) a propósito. */
 :root{
-  --velvet:#1f0d16; --velvet-2:#2b1320; --panel:#2f1724; --pearl:#f4ebe4; --muted:#bfa6ad;
-  --gold:#d4b07a; --gold-2:#f0d7a8; --gold-ink:#24120b; --line:rgba(212,176,122,.28);
+  --velvet:#ffffff; --velvet-2:#faf5ea; --panel:#ffffff; --pearl:#1d1813; --muted:#7c7064; --gold-deep:#8a6a33;
+  --gold:#b38c4f; --gold-2:#e9d3a2; --gold-ink:#2a1d0c; --line:rgba(179,140,79,.32);
   --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
   --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
-  color-scheme:dark;
+  color-scheme:light;
 }
 *{box-sizing:border-box}
 html{background:var(--velvet)}
@@ -28,12 +28,12 @@ main{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 .brand{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
 .gem{width:34px;height:30px}
 .wordmark{font-family:var(--serif);font-weight:500;font-size:clamp(38px,12vw,50px);letter-spacing:.16em;line-height:1;margin:0;padding-left:.16em;color:var(--pearl)}
-.sub{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.42em;padding-left:.42em;color:var(--gold)}
+.sub{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.42em;padding-left:.42em;color:var(--gold-deep)}
 .sub::before,.sub::after{content:"";width:28px;height:1px;background:var(--gold);opacity:.7}
 .intro{text-align:center;color:var(--muted);font-size:15px;margin:2px 0 0}
 
 /* Tarjeta de datos */
-.card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.01)) var(--panel);overflow:hidden}
+.card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,#fffdf7,#ffffff) var(--panel);box-shadow:0 18px 40px -28px rgba(120,90,40,.45);overflow:hidden}
 .card-head{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);
   font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
 .card-head span:last-child{color:var(--muted);letter-spacing:.12em}
@@ -43,16 +43,16 @@ main{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 .value{grid-column:1/-1;margin-top:6px;min-width:0;font-weight:600;font-size:clamp(18px,5.5vw,24px);letter-spacing:.03em;font-variant-numeric:tabular-nums lining-nums;white-space:nowrap;overflow-x:auto;color:var(--pearl);user-select:all}
 .value.text{white-space:normal;letter-spacing:.01em;font-size:18px}
 .hint{grid-column:1/-1;font-size:13px;color:var(--muted);margin-top:4px}
-.copy{grid-column:2;grid-row:1;appearance:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--gold);background:transparent;color:var(--gold-2);
+.copy{grid-column:2;grid-row:1;appearance:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--gold);background:transparent;color:var(--gold-deep);
   font:600 13px var(--sans);letter-spacing:.06em;padding:9px 14px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
 .copy svg{width:15px;height:15px}
-.copy:hover{background:rgba(212,176,122,.12)}
-.copy.done{background:var(--gold);color:var(--gold-ink)}
-.copy:focus-visible,.cta:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
+.copy:hover{background:rgba(179,140,79,.1)}
+.copy.done{background:var(--gold);color:#fff}
+.copy:focus-visible,.cta:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 /* WhatsApp */
 .cta{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:16px;letter-spacing:.03em;
-  color:var(--gold-ink);background:linear-gradient(180deg,var(--gold-2),var(--gold));padding:17px;border-radius:14px;box-shadow:0 10px 26px -14px rgba(212,176,122,.7)}
+  background:linear-gradient(180deg,#d9b877,var(--gold));color:#fff;padding:17px;border-radius:14px;box-shadow:0 12px 26px -14px rgba(140,100,40,.6)}
 .cta svg{width:21px;height:21px;flex:none}
 .cta-note{text-align:center;font-size:14px;color:var(--muted);margin-top:-12px}
 .cta-note b{color:var(--pearl);font-weight:600;letter-spacing:.04em}
@@ -67,7 +67,7 @@ main{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 .cash strong{color:var(--pearl);font-weight:600}
 
 footer{text-align:center;display:flex;flex-direction:column;gap:4px;padding-top:8px}
-footer .thanks{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold-2)}
+footer .thanks{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold-deep)}
 footer .small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .value a,.cta-note a{color:inherit!important;text-decoration:none!important;pointer-events:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
